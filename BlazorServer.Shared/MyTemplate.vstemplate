@@ -1,0 +1,28 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>BlazorServer.Shared</Name>
+    <Description>BlazorServer.Shared 範例說明</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>BlazorServer.Shared</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.PNG</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="BlazorServer.Shared.csproj" File="BlazorServer.Shared.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="WeatherForecast.cs">WeatherForecast.cs</ProjectItem>
+	  <Folder Name="Properties" TargetFolderName="Properties">
+			<Folder Name="PublishProfiles" TargetFolderName="PublishProfiles">
+					<ProjectItem ReplaceParameters="true" TargetFileName="FolderProfile.pubxml">FolderProfile.pubxml</ProjectItem>
+			</Folder>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

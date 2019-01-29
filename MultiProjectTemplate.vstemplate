@@ -1,0 +1,23 @@
+<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>BlazorServer</Name>
+        <Description>BlazorServer 範例說明</Description>
+        <Icon>__TemplateIcon.PNG</Icon>
+		<PreviewImage>__PreviewImage.PNG</PreviewImage>
+        <ProjectType>CSharp</ProjectType>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectCollection>
+                <ProjectTemplateLink ProjectName="BlazorServer.Client">
+                    BlazorServer.Client\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+                <ProjectTemplateLink ProjectName="BlazorServer.Server">
+                    BlazorServer.Server\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+				<ProjectTemplateLink ProjectName="BlazorServer.Shared">
+                    BlazorServer.Shared\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+        </ProjectCollection>
+    </TemplateContent>
+</VSTemplate>
