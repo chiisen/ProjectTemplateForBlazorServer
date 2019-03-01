@@ -28,7 +28,12 @@
       </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Startup.cs">Startup.cs</ProjectItem>
-	  <ProjectItem ReplaceParameters="true" TargetFileName="Startup.cs">Log.cs</ProjectItem>
+	  <ProjectItem ReplaceParameters="true" TargetFileName="Log.cs">Log.cs</ProjectItem>
+	  <ProjectItem ReplaceParameters="true" TargetFileName="Dapper.cs">Dapper.cs</ProjectItem>
+	  <ProjectItem ReplaceParameters="true" TargetFileName="global.json">global.json</ProjectItem>
+	  <ProjectItem ReplaceParameters="true" TargetFileName="hosting.json">hosting.json</ProjectItem>
+	  <ProjectItem ReplaceParameters="true" TargetFileName="database.sqlite">database.sqlite</ProjectItem>
+	  <ProjectItem ReplaceParameters="true" TargetFileName="NLog.config">NLog.config</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>

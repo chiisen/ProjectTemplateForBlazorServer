@@ -5,6 +5,8 @@ using Microsoft.Extensions.Logging;
 using NLog;
 using NLog.Web;
 using System;
+using System.IO;
+using static $safeprojectname$.Dapper;
 using static $safeprojectname$.Log;
 
 namespace $safeprojectname$
@@ -14,19 +16,30 @@ namespace $safeprojectname$
         // 設定 NLog 檔名
         static void SetNlogFileName()
         {
-            _logFileName = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
-            LogManager.Configuration.Variables["MY_DATE"] = _logFileName;
+            LogManager.Configuration.Variables["MY_DATE"] = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
         }
+
+        static IConfigurationRoot _config;// 讀取 hosting.json 裡指定的 Port 的設定物件
 
         public static void Main(string[] args)
         {
+            // 讀取 hosting.json 裡的 Port 設定
+            _config = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("hosting.json", optional: true)
+            .Build();
+
             // NLog: setup the logger first to catch all errors
-            SetupTheLogger = NLogBuilder.ConfigureNLog("NLog.config").GetCurrentClassLogger();
+            SetupLogger();
             SetNlogFileName();
             try
             {
                 Print("init main");
-                Print("Log File Name:" + _logFileName);
+
+
+                // 測試 SQlite database 與 Dapper
+                DapperTest();
+
 
                 BuildWebHost(args).Run();
             }
@@ -48,7 +61,8 @@ namespace $safeprojectname$
                 .UseConfiguration(new ConfigurationBuilder()
                         .AddCommandLine(args)
                         .Build())
-                .UseUrls("http://*:5000")
+                //.UseUrls("http://*:5000") // 指定預設 Port 5000
+                .UseConfiguration(_config) // 讀取 hosting.json 裡面設定的 Port 60000 與 60001
                 .UseStartup<Startup>()
                 .ConfigureLogging(logging =>
                 {
