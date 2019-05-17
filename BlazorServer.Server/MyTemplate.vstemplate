@@ -34,6 +34,7 @@
 	  <ProjectItem ReplaceParameters="true" TargetFileName="hosting.json">hosting.json</ProjectItem>
 	  <ProjectItem ReplaceParameters="true" TargetFileName="database.sqlite">database.sqlite</ProjectItem>
 	  <ProjectItem ReplaceParameters="true" TargetFileName="NLog.config">NLog.config</ProjectItem>
+	  <ProjectItem ReplaceParameters="true" TargetFileName="swagger.xml">swagger.xml</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>
