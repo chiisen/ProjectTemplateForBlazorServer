@@ -7,12 +7,12 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <NoWarn>1701;1702;1591</NoWarn>
-    <DocumentationFile>C:\CSharpProjectTemplate\BlazorServer\BlazorServer.Server\\swagger.xml</DocumentationFile>
+    <DocumentationFile>swagger.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <NoWarn>1701;1702;1591</NoWarn>
-    <DocumentationFile>C:\CSharpProjectTemplate\BlazorServer\BlazorServer.Server\swagger.xml</DocumentationFile>
+    <DocumentationFile>swagger.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
