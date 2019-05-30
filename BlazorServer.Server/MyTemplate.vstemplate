@@ -34,7 +34,11 @@
 	  <ProjectItem ReplaceParameters="true" TargetFileName="hosting.json">hosting.json</ProjectItem>
 	  <ProjectItem ReplaceParameters="true" TargetFileName="database.sqlite">database.sqlite</ProjectItem>
 	  <ProjectItem ReplaceParameters="true" TargetFileName="NLog.config">NLog.config</ProjectItem>
-	  <ProjectItem ReplaceParameters="true" TargetFileName="swagger.xml">swagger.xml</ProjectItem>
+	  <ProjectItem ReplaceParameters="true" TargetFileName="BlazorServer.Server.xml">BlazorServer.Server.xml</ProjectItem>
+	  <ProjectItem ReplaceParameters="true" TargetFileName="Publish.bat">Publish.bat</ProjectItem>
+	  <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.Debug.json">appsettings.Debug.json</ProjectItem>
+	  <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.Release.json">appsettings.Release.json</ProjectItem>
+	  <ProjectItem ReplaceParameters="true" TargetFileName="DebuggingProperties.cs">DebuggingProperties.cs</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>
