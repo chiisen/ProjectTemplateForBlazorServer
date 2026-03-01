@@ -1,0 +1,4 @@
+d:\github\chiisen\ProjectTemplateForBlazorServer\BlazorServer.Shared\obj\Debug\net10.0\BlazorServer.Shared.GeneratedMSBuildEditorConfig.editorconfig
+d:\github\chiisen\ProjectTemplateForBlazorServer\BlazorServer.Shared\obj\Debug\net10.0\BlazorServer.Shared.AssemblyInfoInputs.cache
+d:\github\chiisen\ProjectTemplateForBlazorServer\BlazorServer.Shared\obj\Debug\net10.0\BlazorServer.Shared.AssemblyInfo.cs
+d:\github\chiisen\ProjectTemplateForBlazorServer\BlazorServer.Shared\obj\Debug\net10.0\BlazorServer.Shared.csproj.CoreCompileInputs.cache
